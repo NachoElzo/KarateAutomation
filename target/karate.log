@@ -1,0 +1,63 @@
+11:08:15.750 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - Karate version: 1.2.0
+11:08:15.899 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:08:16.486 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - karate.env system property was: null 
+11:08:16.494 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:inheritanceFeatures/createTokenForUser.feature
+11:08:16.818 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+1 > POST https://api.realworld.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 68
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"apitestdevcl@mail.com","password":"apitestdevcl"}}
+
+11:08:17.541 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 711
+1 < 200
+1 < Date: Mon, 13 Jun 2022 15:08:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"134-Afu1gpoFm9IZHDxvnDoni6Nvi2I"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Pw5ytRSPd6LJ7p1JTqTpR8D6gFRl98%2BKNZw%2B7ykNGRKJCsOd0MOr528ic%2BJOa15LSYt%2FIQe3FWj%2FOsNTTG5gdPnirw%2B9xFznGaLIyeH1DcphtrAV9MkNDBf4Q5BuxScTLpTJ"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 71abbda1ebee6f2b-SCL
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"user":{"email":"apitestdevcl@mail.com","username":"apitestdevcl","bio":null,"image":null,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwaXRlc3RkZXZjbEBtYWlsLmNvbSIsInVzZXJuYW1lIjoiYXBpdGVzdGRldmNsIiwiaWF0IjoxNjU1MTMyODk4LCJleHAiOjE2NjAzMTY4OTh9.bYKLYqwKKQVxl4kKSnKpRqUI_aDSQLPWn5jTgzfh6ec"}}
+
+11:08:17.551 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:inheritanceFeatures/createTokenForUser.feature
+11:08:17.563 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - request:
+2 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+2 > Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFwaXRlc3RkZXZjbEBtYWlsLmNvbSIsInVzZXJuYW1lIjoiYXBpdGVzdGRldmNsIiwiaWF0IjoxNjU1MTMyODk4LCJleHAiOjE2NjAzMTY4OTh9.bYKLYqwKKQVxl4kKSnKpRqUI_aDSQLPWn5jTgzfh6ec
+2 > Host: api.realworld.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.2)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:08:18.284 [com.intuit.karate.cli.Main.main()] DEBUG com.intuit.karate - response time in milliseconds: 720
+2 < 200
+2 < Date: Mon, 13 Jun 2022 15:08:18 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Access-Control-Allow-Origin: *
+2 < Etag: W/"85a-fUeLkx66SSoG0FbCpOP+N3MrXVQ"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: DYNAMIC
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=POS2DVCZq0BpNLCWiGbNk0%2F8zvpRH7AyvvRwwORXIl8n82p7WRQjxOqTWmpyIRZVhx3vSrtPR1CsrIqecBVHfhpV9baGFHMka0solvfrk0jWN7g6Pzr43danNYQNMg%2FC32U9"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 71abbda5dd282ded-SCL
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Laenor-Velaryon-52638","title":"Laenor Velaryon","description":"Old Ghis","body":"Every flight begins with a fall.","tagList":[],"createdAt":"2022-06-07T00:46:45.089Z","updatedAt":"2022-06-07T00:46:45.089Z","favorited":false,"favoritesCount":0,"author":{"username":"apitestdevcl","bio":null,"image":"https://api.realworld.io/images/smiley-cyrus.jpeg","following":false}},{"slug":"Create-a-new-implementation-1","title":"Create a new implementation","description":"join the community by creating a new implementation","body":"Share your knowledge and enpower the community by creating a new implementation","tagList":["implementations"],"createdAt":"2021-11-24T12:11:08.212Z","updatedAt":"2021-11-24T12:11:08.212Z","favorited":false,"favoritesCount":2688,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Explore-implementations-1","title":"Explore implementations","description":"discover the implementations created by the RealWorld community","body":"Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.","tagList":["codebaseShow","implementations"],"createdAt":"2021-11-24T12:11:07.952Z","updatedAt":"2021-11-24T12:11:07.952Z","favorited":false,"favoritesCount":1566,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Welcome-to-RealWorld-project-1","title":"Welcome to RealWorld project","description":"Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more","body":"See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec","tagList":["welcome","introduction"],"createdAt":"2021-11-24T12:11:07.557Z","updatedAt":"2021-11-24T12:11:07.557Z","favorited":false,"favoritesCount":1111,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}}],"articlesCount":4}
+
+11:08:18.808 [com.intuit.karate.cli.Main.main()] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/TestSuites/Feature1/HomeWork.feature
